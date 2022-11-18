@@ -1,0 +1,73 @@
+﻿<Window x:Class="Lab17_18.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab17_18"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="Time"
+                 Grid.Column="3"
+                 Grid.ColumnSpan="2"
+                 Margin="39,0,0,10" 
+                 TextWrapping="Wrap" 
+                 FontSize="30"
+                 TextAlignment="Center"
+                 PreviewTextInput="timerTxb_PreviewTextInput"
+                 HorizontalAlignment="Left" 
+                 Width="242" 
+                 Height="45" 
+                 VerticalAlignment="Bottom"/>
+        <Label Content="Оставшееся время
+               "
+               FontSize="30"
+               Grid.Column="1" Margin="80,10,126,10" Grid.ColumnSpan="3"/>
+
+        <TextBox x:Name="SumNumberOne" Margin="55,15,55,15" Grid.Row="1" IsEnabled="False" Text="?"/>
+        <TextBlock Grid.Column="1" Grid.Row="1" Text="+" FontSize="30" TextAlignment="Center" Margin="54,15,54,15"/>
+        <TextBox x:Name="SumNumberTwo" Margin="55,15,55,15" Grid.Row="1" Grid.Column="2" IsEnabled="False" Text="?"/>
+        <TextBlock Grid.Column="3" Grid.Row="1" Text="=" FontSize="30" TextAlignment="Center" Margin="54,15,54,15"/>
+        <TextBox x:Name="SumNumberAnswer" Margin="55,15,55,15" Grid.Row="1" Grid.Column="4" Text="0"/>
+
+        <TextBox x:Name="MinNumberOne" Margin="55,15,55,15" Grid.Row="2" IsEnabled="False" Text="?"/>
+        <TextBlock Grid.Column="1" Grid.Row="2" Text="-" FontSize="30" TextAlignment="Center" Margin="54,15,54,15"/>
+        <TextBox x:Name="MinNumberTwo" Margin="55,15,55,15" Grid.Row="2" Grid.Column="2" IsEnabled="False" Text="?"/>
+        <TextBlock Grid.Column="3" Grid.Row="2" Text="=" FontSize="30" TextAlignment="Center" Margin="54,15,54,15"/>
+        <TextBox x:Name="MinNumberAnswer" Margin="55,15,55,15" Grid.Row="2" Grid.Column="4" Text="0"/>
+
+
+        <TextBox x:Name="MulNumberOne" Margin="55,15,55,15" Grid.Row="3" IsEnabled="False" Text="?"/>
+        <TextBlock Grid.Column="1" Grid.Row="3" Text="*" FontSize="30" TextAlignment="Center" Margin="54,15,54,15"/>
+        <TextBox x:Name="MulNumberTwo" Margin="55,15,55,15" Grid.Row="3" Grid.Column="2" IsEnabled="False" Text="?"/>
+        <TextBlock Grid.Column="3" Grid.Row="3" Text="=" FontSize="30" TextAlignment="Center" Margin="54,15,54,15"/>
+        <TextBox x:Name="MulNumberAnswer" Margin="55,15,55,15" Grid.Row="3" Grid.Column="4" Text="0"/>
+
+        <TextBox x:Name="DevNumberOne" Margin="55,15,55,15" Grid.Row="4" IsEnabled="False" Text="?"/>
+        <TextBlock Grid.Column="1" Grid.Row="4" Text="/" FontSize="30" TextAlignment="Center" Margin="54,15,54,15"/>
+        <TextBox x:Name="DevNumberTwo" Margin="55,15,55,15" Grid.Row="4" Grid.Column="2" IsEnabled="False" Text="?"/>
+        <TextBlock Grid.Column="3" Grid.Row="4" Text="=" FontSize="30" TextAlignment="Center" Margin="54,15,54,15"/>
+        <TextBox x:Name="DevNumberAnswer" Margin="55,15,55,15" Grid.Row="4" Grid.Column="4" Text="0"/>
+
+        <Button x:Name="Start"
+                Grid.Column="2"
+                Grid.Row="5" 
+                Margin="10,10,10,10"
+                Content="Начать тест" Click="StartStopBtn_Click" FontSize="18"/>
+    </Grid>
+</Window>
