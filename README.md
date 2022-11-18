@@ -154,7 +154,7 @@ public partial class MainWindow : Window
     }
 ```
 
-## Авторы
+## Автор
 
 * **Коротких Анна** - *Основная работа* - [AnnaKorotkikh](https://github.com/AnnaKorotkikh)
 
